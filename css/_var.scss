@@ -1,0 +1,13 @@
+$black: #555555;
+$darkblack: #333333;
+$blue: #3708F9;
+$green: #03D1A3;
+$animationValue: all 0.3s ease-in-out;
+
+@mixin prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
