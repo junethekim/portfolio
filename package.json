@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "babel": "npx babel public/js --watch --out-dir public/js-compiled"
   },
   "repository": {
     "type": "git",
