@@ -51,7 +51,7 @@ class Nav extends React.Component {
     return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
       class: this.state.isToggleOn ? 'slate active' : 'slate',
       id: "slate"
-    }), /*#__PURE__*/React.createElement("a", {
+    }), /*#__PURE__*/React.createElement("div", {
       class: "hbgmenu",
       id: "hbg",
       onClick: this.handleClick
@@ -68,13 +68,13 @@ class Nav extends React.Component {
       class: "content"
     }, /*#__PURE__*/React.createElement("a", {
       class: "logo",
-      href: "index.html"
+      href: "/"
     }, /*#__PURE__*/React.createElement("img", {
       src: "assets/logo.png"
     })), /*#__PURE__*/React.createElement("div", {
       class: "contact"
     }, /*#__PURE__*/React.createElement("a", {
-      href: "index.html"
+      href: "/"
     }, "Projects"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
       href: "mailto:imjunejk@gmail.com"
     }, "Email"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("a", {
