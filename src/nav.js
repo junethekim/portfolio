@@ -43,5 +43,3 @@ ReactDOM.render(
     <Nav />,
     document.getElementById('nav')
 );
-
-module.exports = Nav

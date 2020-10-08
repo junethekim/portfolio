@@ -5,7 +5,6 @@ const babel = require("@babel/core")
 const app = express()
 const port = 3000
 
-
 const templateHTML = (js) => {
     const navHTML = babel.transformFileSync(path.join(__dirname, 'nav.js'), {"presets": ["@babel/preset-react"]})
     return (
@@ -47,8 +46,57 @@ app.get('/', (req, res) => {
     })
 })
 
-app.get('/paypalcashio', (req, res) => {
-    babel.transformFile(path.join(__dirname, 'app2.js'), {"presets": ["@babel/preset-react"]}, (error, result) => {
+
+app.get('/carta_is', (req, res) => {
+    babel.transformFile(path.join(__dirname, 'carta_isr.js'), {"presets": ["@babel/preset-react"]}, (error, result) => {
+        if(error){
+            console.log(error)
+        }
+        res.send(templateHTML(result))
+    })
+})
+app.get('/carta_ccl', (req, res) => {
+    babel.transformFile(path.join(__dirname, 'carta_ccl.js'), {"presets": ["@babel/preset-react"]}, (error, result) => {
+        if(error){
+            console.log(error)
+        }
+        res.send(templateHTML(result))
+    })
+})
+app.get('/carta_ccds', (req, res) => {
+    babel.transformFile(path.join(__dirname, 'carta_ccds.js'), {"presets": ["@babel/preset-react"]}, (error, result) => {
+        if(error){
+            console.log(error)
+        }
+        res.send(templateHTML(result))
+    })
+})
+app.get('/paypal_cashio', (req, res) => {
+    babel.transformFile(path.join(__dirname, 'paypal_cashio.js'), {"presets": ["@babel/preset-react"]}, (error, result) => {
+        if(error){
+            console.log(error)
+        }
+        res.send(templateHTML(result))
+    })
+})
+app.get('/paypal_dl', (req, res) => {
+    babel.transformFile(path.join(__dirname, 'paypal_dl.js'), {"presets": ["@babel/preset-react"]}, (error, result) => {
+        if(error){
+            console.log(error)
+        }
+        res.send(templateHTML(result))
+    })
+})
+app.get('/paypal_cc', (req, res) => {
+    babel.transformFile(path.join(__dirname, 'paypal_cc.js'), {"presets": ["@babel/preset-react"]}, (error, result) => {
+        if(error){
+            console.log(error)
+        }
+        res.send(templateHTML(result))
+    })
+})
+app.get('/truffle', (req, res) => {
+    babel.transformFile(path.join(__dirname, 'truffle.js'), {"presets": ["@babel/preset-react"]}, (error, result) => {
         if(error){
             console.log(error)
         }

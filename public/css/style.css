@@ -7,6 +7,14 @@ body {
   font-size: 16px;
 }
 
+.divider {
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: black;
+  margin: 90px 0 120px 0;
+}
+
 .truffle {
   background-color: #F5F2F2;
 }
