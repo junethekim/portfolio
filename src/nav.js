@@ -10,10 +10,15 @@ class Nav extends React.Component {
             isToggleOn: !state.isToggleOn
         }));
     }
+    exitClick() {
+        this.setState(state => ({
+            isToggleOn: !state.isToggleOn
+        }));
+    }
     render(){
         return (
             <div>
-                <div class={this.state.isToggleOn ? 'slate active' : 'slate'} id="slate" />
+                <div class={this.state.isToggleOn ? 'slate active' : 'slate'} id="slate" onClick={this.handleClick}/>
                 <div class="hbgmenu" id="hbg" onClick={this.handleClick}>
                     <div class="hbgbar bar1" />
                     <div class="hbgbar bar2" />
