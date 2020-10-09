@@ -3,9 +3,10 @@ const path = require('path')
 const babel = require("@babel/core")
 const React = require('react')
 const ReactDOM = require('react-dom')
+
 // require('serviceWorker.js')
 const app = express()
-const port = 3000
+const port = process.env.port || 3000;
 
 const templateHTML = (js) => {
     const navHTML = babel.transformFileSync(path.join(__dirname, 'nav.js'), {"presets": ["@babel/preset-react"]})
@@ -107,6 +108,4 @@ app.get('/truffle', (req, res) => {
     })
 })
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen(port)
