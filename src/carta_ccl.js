@@ -150,8 +150,8 @@ function ProjectRow(){
             <div className="row">
                 <div className="col-sm-12 row">
                     <div className="vertical-space"></div>
-                    <a className="previous col-sm-3" href="carta_isr.html">PREVIOUS<br/><span className="label">Carta Investor experience redesign</span></a>
-                    <a className="next col-sm-3" href="carta_ccds.html">NEXT<br/><span className="label">Carta Fund admin distribution V2</span></a>
+                    <a className="previous col-sm-3" href="carta_is">PREVIOUS<br/><span className="label">Carta Investor experience redesign</span></a>
+                    <a className="next col-sm-3" href="carta_ccds">NEXT<br/><span className="label">Carta Fund admin distribution V2</span></a>
 
                 </div>
             </div>

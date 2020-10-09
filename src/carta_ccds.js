@@ -95,8 +95,8 @@ function ProjectRow(){
             <div className="row">
                 <div className="col-sm-12 row">
                     <div className="vertical-space"></div>
-                    <a className="previous col-sm-3" href="carta_ccl.html">PREVIOUS<br/><span className="label">Carta capital call line</span></a>
-                    <a className="next col-sm-3" href="paypal2.html">NEXT<br/><span className="label">PayPal Cash In & Out</span></a>
+                    <a className="previous col-sm-3" href="carta_ccl">PREVIOUS<br/><span className="label">Carta capital call line</span></a>
+                    <a className="next col-sm-3" href="paypal_cashio">NEXT<br/><span className="label">PayPal Cash In & Out</span></a>
                 </div>
             </div>
 

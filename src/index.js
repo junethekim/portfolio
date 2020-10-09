@@ -1,7 +1,9 @@
 const express = require('express')
 const path = require('path')
 const babel = require("@babel/core")
-
+const React = require('react')
+const ReactDOM = require('react-dom')
+// require('serviceWorker.js')
 const app = express()
 const port = 3000
 
@@ -33,6 +35,7 @@ const templateHTML = (js) => {
             `
     )
 }
+
 
 
 app.use(express.static(path.join(__dirname, '../public')))
