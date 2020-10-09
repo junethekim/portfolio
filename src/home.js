@@ -4,13 +4,7 @@ class Main extends React.Component {
             <div id="main" class="row">
                 <div class="col-md-6">
                     <h1>June J. Kim</h1>
-                    <p>UX Engineer</p>
                 </div>
-                {/*<div className="col-sm-12">*/}
-                {/*    <div className="vertical-space" />*/}
-                {/*    <div className="divider" />*/}
-                {/*    <h2>My projects</h2>*/}
-                {/*</div>*/}
             </div>
         )
     }
@@ -18,11 +12,13 @@ class Main extends React.Component {
 
 const projects = {
     cartaIS : {
+        label: "Carta",
         title: "Investor Services Redesign",
         time: "2019",
         imgSrc: "assets/is_redesign/home01.png",
         href: "carta_is"
     }, cartaCCL : {
+        label: "Carta",
         title: "Capital Call Line",
         time: "2019",
         imgSrc: "assets/ccl/home01.png",
@@ -34,17 +30,20 @@ const projects = {
         href: "carta_ccds"
     },
     ppCashIO : {
-        title: "PayPal Cash In & Out",
+        label: "PayPal",
+        title: "Cash In & Out",
         time: "2017 – 2018",
         imgSrc: "assets/cashio_intro.png",
         href: "paypal_cashio"
     }, ppDL : {
-        title: "PayPal Design Language",
+        label: "PayPal",
+        title: "Design Language",
         time: "2016 – 2018",
         imgSrc: "assets/dl_intro.png",
         href: "paypal_dl"
     }, ppCC : {
-        title: "PayPal Cash Card Enrollment",
+        label: "PayPal",
+        title: "Cash Card Enrollment",
         time: "2018",
         imgSrc: "assets/ppcc.png",
         href: "paypal_cc"
@@ -61,6 +60,7 @@ function ProjectRow(props){
         <div className="project row">
             <a href={props.data.href}>
                 <div className="col-sm-4 project-title">
+                    <p className="label">{props.data.label}</p>
                     <h2 className="main-title">{props.data.title}
                         <p className="label">{props.data.time}</p>
                     </h2>

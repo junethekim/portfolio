@@ -25,7 +25,7 @@ class Nav extends React.Component {
                         <div class="contact">
                             <a href="/">Projects</a>
                             <br />
-                            <a href="mailto:imjunejk@gmail.com">Email</a>
+                            <a href="mailto:junethekim@gmail.com">Email</a>
                             <br />
                             <a href="assets/june-kim_resume.pdf" target="_blank">Résumé</a>
                             <br />

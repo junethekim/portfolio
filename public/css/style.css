@@ -51,6 +51,22 @@ h3 {
 .project {
   margin-bottom: 120px;
 }
+.project .next {
+  float: left;
+  text-align: left;
+}
+.project p.label {
+  margin-bottom: 0px;
+}
+
+.project a:hover .previous:after {
+  margin-right: 8px;
+  opacity: 1;
+}
+.project a:hover .next:after {
+  margin-left: 8px;
+  opacity: 1;
+}
 
 .project-img {
   -webkit-transition: all 0.3s ease-in-out;
@@ -94,7 +110,7 @@ a:hover {
   color: #3708F9;
 }
 a:hover .main-title:after {
-  width: 120px;
+  width: 90px;
   background-color: #3708F9;
 }
 .label {

@@ -108,11 +108,11 @@ function ProjectRow(){
             <div className="row">
                 <div className="col-sm-12 row">
                     <div className="vertical-space" />
-                    <a className="previous col-sm-3" href="truffle.html">
+                    <a className="previous col-sm-3" href="truffle">
                         PREVIOUS<br/>
                         <span className="label">Truffle</span>
                     </a>
-                    <a className="next col-sm-3" href="carta_ccl.html">
+                    <a className="next col-sm-3" href="carta_ccl">
                         NEXT<br/>
                         <span className="label">Carta Capital Call Line</span>
                     </a>
